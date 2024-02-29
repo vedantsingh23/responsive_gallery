@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <!-- initial grid images -->
     <div class="gallery">
         <div class="images">
+            <!-- calles the function to move onto the next slide -->
             <div class="zonda" onclick="openn();current(1)"><img src="./zonda1.jpg" alt="zonda1"></div>
             <div class="zonda" onclick="openn();current(2)"><img src="./zonda2.jpg" alt="zonda2"></div>
             <div class="zonda" onclick="openn();current(3)"><img src="./zonda3.jpg" alt="zonda3"></div>
@@ -18,10 +19,12 @@
             <div class="zonda" onclick="openn();current(6)"><img src="./zonda6.jpg" alt="zonda6"></div>
         </div>
     </div>
-
+<!-- Images that pop up -->
     <div id="images1" class="images1">
-        <span class="close" onclick="closee()">&times;</span>
+        <!-- closes out of the image -->
+        <span class="close" onclick="closee()">&times;</span> 
         <div class="imgg">
+            <!-- creates previous and next button -->
             <span class="previous" onclick="nextSlide(-1)">&#10094;</span>
             <span class="next" onclick="nextSlide(1)">&#10095;</span>
             <div class="zondaa"><img src="./zonda1.jpg" alt="pic1"></div>
